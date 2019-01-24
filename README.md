@@ -6,7 +6,7 @@ A validação da conta bancária é realizada sobre as regras dos seguintes banc
  * Conta corrente de 1 até 12 números
  * Dígito da conta corrente de 0 a 2 caracteres
 
-O número da agência e conta corrente dos bancos Itaú, Bradesco, e Banco do Brasil são validados através do cálculo do dígito verificador (semelhante a validação do CPF).
+O número da agência e conta corrente dos bancos Itaú, Bradesco, Banco do Brasil, Santander e Caixa são validados através do cálculo do dígito verificador (semelhante a validação do CPF).
 
 # Implementação a validação em seu site
 
