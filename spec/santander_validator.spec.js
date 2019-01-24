@@ -1,14 +1,15 @@
 describe("SantanderValidator", function() {
 
   var validBankAccountParams;
+  var invalidBankAccountParams;
 
   beforeEach(function() { 
     validBankAccountParams = {
       bankNumber         : "033",
-      agencyNumber       : "1584",
+      agencyNumber       : "2001",
       agencyCheckNumber  : "",
-      accountNumber      : "01789012",
-      accountCheckNumber : "6",
+      accountNumber      : "01038237",
+      accountCheckNumber : "7",
       valid: jasmine.createSpy(),
       invalid: jasmine.createSpy()
     };
@@ -53,7 +54,5 @@ describe("SantanderValidator", function() {
       }]};
       expect(validBankAccountParams.invalid).toHaveBeenCalledWith(expectedParams);
     });
-
   });
-
 });

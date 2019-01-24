@@ -1,3 +1,4 @@
+
 (function(window) {
   var Moip = window.Moip || {};
   window.Moip = Moip;
@@ -31,7 +32,8 @@
     },
     
     accountCheckNumberMatch: function(bankAccount) {
-      return true;
+      var checkNumberCalculated = Moip.SantanderCheckNumberCalculator.calculate(bankAccount.agencyNumber, bankAccount.accountNumber);
+      return checkNumberCalculated === bankAccount.accountCheckNumber;
     },
 
     agencyNumberMsgError: function() {

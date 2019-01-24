@@ -44,6 +44,13 @@ module.exports = function (grunt) {
       }
     },
 
+    watch: {
+      js: {
+        files: ['src/**/*.js', 'spec/**/*.js'],
+        tasks: ['jasmine']
+      }
+    },
+
     concat: {
       dist: {
         src: ["lib/jsencrypt.min.js", "src/**/*.js"],
@@ -107,6 +114,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-aws');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   //**********************
   // Private task (auxiliar)
