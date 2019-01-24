@@ -1,7 +1,3 @@
-# Validador de conta bancária on-line
-Você pode realizar a validação a qualquer momento através do site:
-http://validadorbanco.moip.com.br
-
 # Validador de contas bancárias
 
 A validação da conta bancária é realizada sobre as regras dos seguintes bancos: Itaú, Bradesco, Banco do Brasil, Santander, Citibank e HSBC. Para os outros bancos é realizada uma validação padrão:
@@ -10,7 +6,7 @@ A validação da conta bancária é realizada sobre as regras dos seguintes banc
  * Conta corrente de 1 até 12 números
  * Dígito da conta corrente de 0 a 2 caracteres
 
-O número da agência e conta corrente dos bancos Itaú, Bradesco, e Banco do Brasil são validados através do cálculo do dígito verificador (semelhante a validação do CPF).
+O número da agência e conta corrente dos bancos Itaú, Bradesco, Banco do Brasil, Santander e Caixa são validados através do cálculo do dígito verificador (semelhante a validação do CPF).
 
 # Implementação a validação em seu site
 
@@ -100,7 +96,7 @@ Após realizar as mudanças do projeto, ou caso queira apenas executar o projeto
 %> grunt build
 ```
 
-### Executando a validação no browser
+### Executando a validação no browserm
 Após executar o build, basta abrir o arquivo validator.html no seu browser.
 
 ### Release (gera uma nova versão major/minor/patch)
