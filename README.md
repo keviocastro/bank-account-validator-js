@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/keviocastro/bank-account-validator-js.svg?branch=master)](https://travis-ci.org/keviocastro/bank-account-validator-js)
+
 # Validador de contas bancárias
 
 A validação da conta bancária é realizada sobre as regras dos seguintes bancos: Itaú, Bradesco, Banco do Brasil, Santander, Citibank e HSBC. Para os outros bancos é realizada uma validação padrão:
